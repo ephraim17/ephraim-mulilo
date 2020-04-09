@@ -1,0 +1,128 @@
+
+jQuery.noConflict();
+
+jQuery( document ).ready(function() {
+
+	jQuery('#tts-all').addClass('tts-current-li');
+	jQuery("#tts-filter-nav > li").click(function(){
+	    tts_show(this.id);
+	}).children().click(function(e) {
+	  return false;
+	});
+
+	jQuery("#tts-filter-nav > li > ul > li").click(function(){
+	    tts_show(this.id);
+	});
+
+	//Load specific category via url hash
+
+	var start_filter = tts_get_hash()["show"];
+	if(start_filter!='') {
+		jQuery('#'+start_filter).click();
+		
+	}
+
+});
+
+//In case you want all entries to hide when the page loads
+//jQuery('.ts-05_project-5').hide();	
+//To load a particular category
+//jQuery('#tts-01-sales-team').click();
+
+
+
+
+//FILTER CODE
+function tts_show(category) {	 
+
+	
+	
+	if (category == "tts-all") {
+        jQuery('#tts-filter-nav li').removeClass('tts-current-li');
+        jQuery('#tts-all').addClass('tts-current-li');
+        jQuery('.ttshowcase_rl_box').show(1600,'easeInOutExpo');
+
+		}
+	
+	else {
+
+		jQuery('#tts-filter-nav li').removeClass('tts-current-li');
+   		jQuery('#' + category).addClass('tts-current-li');
+   		if(jQuery('#' + category).parent().parent().is('li')) {
+   			jQuery('#' + category).parent().parent().addClass('tts-current-li');
+   		} 
+
+		jQuery('.' + category).show(1600,'easeInOutExpo');
+		jQuery('.ttshowcase_rl_box:not(.'+ category+')').hide(1000,'easeInOutExpo');
+			
+	}
+
+
+	//hack to solve menu left open on touch devices
+	/*
+
+		jQuery('ul li ul li.ts-current-li')
+		.parent()
+		.hide()
+		.parent()
+		.on('click', function(){ 
+			jQuery(this).addClass('ts-current-li')
+			.children().show(); 
+		});
+
+	*/
+}
+
+
+jQuery(document).ajaxSuccess(function() {
+  
+	jQuery('#tts-all').addClass('tts-current-li');
+	jQuery("#tts-filter-nav > li").click(function(){
+	    tts_show(this.id);
+	}).children().click(function(e) {
+	  return false;
+	});
+
+	jQuery("#tts-filter-nav > li > ul > li").click(function(){
+	    ts_show(this.id);
+	});
+});
+
+
+
+
+
+function tts_get_hash(){
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('#') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+
+/*
+     FILE ARCHIVED ON 20:00:37 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:44:37 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 18.168 (3)
+  exclusion.robots.policy: 0.183
+  RedisCDXSource: 41.712
+  LoadShardBlock: 759.185 (3)
+  PetaboxLoader3.resolve: 153.584 (2)
+  esindex: 0.015
+  captures_list: 822.485
+  exclusion.robots: 0.197
+  PetaboxLoader3.datanode: 972.594 (5)
+  load_resource: 413.412
+*/

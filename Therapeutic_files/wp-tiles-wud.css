@@ -1,0 +1,217 @@
+/*
+ *	Plugin Name: WP Tiles WUD
+*/
+
+@import url("/web/20181009144227cs_/http://www.bluedragonflycenter.com/wp-content/plugins/wp-tiles-wud/css/wp-tiles-wud-base.css");
+
+#wp-tiles-wud-wrapper-1 {
+    width: 50%;
+	height: 0;	
+	padding-bottom: 48.5%;
+	font-size: 24px; 
+	font-size: 1.6vw;
+}
+#wp-tiles-wud-wrapper-2 {
+    width: 24%;
+	height: 0;	
+	padding-bottom: 24%;
+	margin-left: 0.9%;
+	margin-bottom: 0.5%;	
+	font-size: 22px; 
+	font-size: 1.4vw;	
+}
+#wp-tiles-wud-wrapper-3 {
+    width: 24%;
+	height: 0;	
+	padding-bottom: 24%;
+	margin-left: 0.9%;
+	margin-bottom: 0.5%;	
+	font-size: 22px; 
+	font-size: 1.4vw;	
+}
+#wp-tiles-wud-wrapper-4 {
+    width: 24%;
+	height: 0;	
+	padding-bottom: 24%;
+	margin-left: 0.9%;
+	margin-bottom: 0.5%;
+	font-size: 22px; 
+	font-size: 1.4vw;
+}
+#wp-tiles-wud-wrapper-5 {
+    width: 24%;
+	height: 0;	
+	padding-bottom: 24%;
+	margin-left: 0.9%;
+	margin-bottom: 0.5%;
+	font-size: 22px; 
+	font-size: 1.4vw;	
+}
+#wp-tiles-wud-wrapper-6 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-7 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;
+    margin-left: 0.96%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-8 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;
+    margin-left: 0.96%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;
+	font-size: 18px; 
+	font-size: 1.2vw;
+	}
+#wp-tiles-wud-wrapper-9 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;
+    margin-left: 0.96%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;
+	font-size: 18px; 
+	font-size: 1.2vw;
+	}
+#wp-tiles-wud-wrapper-10 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;
+    margin-left: 0.96%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;
+	font-size: 18px; 
+	font-size: 1.2vw;
+	}
+#wp-tiles-wud-wrapper-11 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-12 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;
+    margin-left: 0.96%;		
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-13 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;
+    margin-left: 0.96%;		
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-14 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;	
+	margin-left: 0.96%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-15 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;
+    margin-left: 0.96%;		
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-16 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-17 {
+    width: 19.2%;
+	height: 0;	
+	margin-left: 0.96%;	
+	padding-bottom: 19.2%;	
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-18 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;	
+	margin-left: 0.9%;
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-19 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;	
+	margin-left: 0.9%;
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+#wp-tiles-wud-wrapper-20 {
+    width: 19.2%;
+	height: 0;	
+	padding-bottom: 19.2%;	
+	margin-left: 0.9%;
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;	
+	font-size: 18px; 
+	font-size: 1.2vw;	
+}
+/*
+     FILE ARCHIVED ON 14:42:27 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:54:50 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.02
+  CDXLines.iter: 14.071 (3)
+  RedisCDXSource: 7.075
+  PetaboxLoader3.resolve: 200.757 (3)
+  exclusion.robots.policy: 0.171
+  captures_list: 156.054
+  LoadShardBlock: 131.11 (3)
+  PetaboxLoader3.datanode: 113.639 (5)
+  exclusion.robots: 0.184
+  load_resource: 217.345
+*/

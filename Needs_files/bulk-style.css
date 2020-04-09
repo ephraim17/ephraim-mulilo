@@ -1,0 +1,46 @@
+#TB_overlay.TB_overlayBG {
+    background-color:#E3EDF4;
+}
+body{
+    background: #ffffff !important;
+}
+.bulk-title-edit .bulk-title-text{
+    padding: 3px 8px;
+    font-size: 1.0em;
+    line-height: 100%;
+    height: 1.7em;
+    width: 80%;
+    outline: 0;
+    margin: 0px 90px 12px;
+    /* background-color: #fff; */
+}
+
+.bulk-button{
+    color: #ff0000;
+    background-color: #CC0000;
+    float: right;
+    margin-right: 20px;
+}
+
+
+/*
+     FILE ARCHIVED ON 16:03:20 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:40:03 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.014
+  exclusion.robots.policy: 0.122
+  CDXLines.iter: 16.25 (3)
+  PetaboxLoader3.datanode: 292.642 (4)
+  exclusion.robots: 0.132
+  RedisCDXSource: 4.554
+  load_resource: 441.482
+  PetaboxLoader3.resolve: 143.746 (2)
+  captures_list: 221.609
+  LoadShardBlock: 197.893 (3)
+*/

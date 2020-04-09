@@ -1,0 +1,166 @@
+/*
+
+Reset
+
+
+*/
+
+/* Fix for administration screen */
+
+.wp-admin .ttshowcase_rating .value-title {
+    display:none;
+}
+
+.wp-admin .ttshowcase_wrap .rating {
+	margin:0;
+}
+
+/* Single Page Styles */
+.tt_single_page_testimonial_title {
+	font-weight: bold;
+	padding:5px 0;
+}
+
+/*
+
+Image Classes
+
+*/
+
+.tt_img_round img {
+	border-radius:10%;
+	overflow:hidden;
+}
+
+.tt_img_circle img {
+	border-radius:50%;
+	overflow:hidden;  
+}
+
+.tt_img_square img {
+	border-radius:0%;
+	overflow:hidden;
+}
+
+/*
+
+Text Alignment Classes
+
+*/
+
+.tt_text_left {
+	text-align: left;
+}
+
+.tt_text_center {
+	text-align: center;
+}
+
+.tt_text_right {
+	text-align: right;
+}
+
+
+/*
+
+	Responsive Columns CSS
+
+*/
+
+
+.tt_full_column {
+	width:98%;
+	padding: 0px; 
+	margin:0 auto;
+}
+
+
+.tt_1cl,
+.tt_2cl,
+.tt_3cl,
+.tt_4cl,
+.tt_5cl,
+.tt_6cl {
+
+	display:inline-block; 
+	vertical-align:middle; 
+
+}
+
+.tt_1cl {
+	width:99%; 
+	margin:0 0 30px 0; 
+}
+
+
+.tt_2cl {
+	width:45%; 
+	margin:2.5%; 
+}
+
+.tt_3cl {
+	width:30%; 
+	margin:1.5%; 
+}
+
+.tt_3cl {
+	width:30%; 
+	margin:1.5%; 
+}
+
+.tt_4cl {
+	width:23%; 
+	margin:1%; 
+}
+
+.tt_5cl {
+	width:18%; 
+	margin:1%; 
+}
+
+.tt_6cl {
+	width:15%; 
+	margin:0.8%; 
+}
+
+
+@media only screen and (max-width : 650px) {
+      /* Smartphone view: 1 tile maximum */
+		.tt_1cl, .tt_2cl, .tt_3cl, .tt_4cl, .tt_5cl, .tt_6cl {
+			width:99%; 
+			margin:0 0 20px 0; 
+		}
+
+    }
+
+
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+  /* Small desktop / ipad view: 4 tiles */
+	.tt_2cl, .tt_3cl, .tt_4cl, .tt_5cl,.tt_6cl  {
+		width:45%; 
+		margin:2.5%; 
+	}
+  
+  
+}
+/*
+     FILE ARCHIVED ON 09:16:10 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:44:23 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.datanode: 133.773 (4)
+  PetaboxLoader3.resolve: 51.944
+  esindex: 0.024
+  CDXLines.iter: 17.808 (3)
+  load_resource: 122.114
+  captures_list: 163.123
+  LoadShardBlock: 119.435 (3)
+  RedisCDXSource: 22.427
+  exclusion.robots.policy: 0.177
+  exclusion.robots: 0.191
+*/

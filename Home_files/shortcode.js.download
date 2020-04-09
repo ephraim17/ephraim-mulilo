@@ -1,0 +1,90 @@
+
+function cm_tt_shortcode_check(shortcode_id) {
+
+	//When Ajax Loads
+	jQuery( document ).ajaxComplete(function() {
+	  
+		jQuery(".tt_colorbox_iframe").colorbox({iframe:true, innerWidth:640, innerHeight:390, transition: 'fade'});
+
+		if (typeof Masonry !== 'undefined') {
+
+			var container = document.querySelector('.ttshowcase_wrap > div');
+			
+			if(container!=null) {
+
+
+				var msnry = new Masonry( container, {
+			  	itemSelector: '.ttshowcase_rl_box'
+				});		
+
+			}
+			
+
+		}
+
+		var filter = jQuery("#tts-filter-nav");
+		if(filter) {
+
+				jQuery('#tts-all').addClass('tts-current-li');
+				jQuery("#tts-filter-nav > li").click(function(){
+				    tts_show(this.id);
+				}).children().click(function(e) {
+				  return false;
+				});
+
+				jQuery("#tts-filter-nav > li > ul > li").click(function(){
+				    tts_show(this.id);
+				});
+		}
+
+		var enhancefilter = jQuery("#tts-enhance-filter-nav");
+		if(enhancefilter) {
+
+					jQuery('#tts-all').addClass('tts-current-li');
+					jQuery("#tts-enhance-filter-nav > li").click(function(){
+					    tts_show_enhance(this.id);
+					}).children().click(function(e) {
+					  return false;
+					});
+
+					jQuery("#tts-enhance-filter-nav > li > ul > li").click(function(){
+					    tts_show_enhance(this.id);
+					});
+		}
+
+		var isofilter = jQuery("#tts-isotope-filter-nav");
+		if(isofilter) {
+
+				tts_isotope_process();
+		}
+
+		jQuery( document ).unbind('ajaxComplete');
+	  
+	});
+
+	
+}
+
+
+
+/*
+     FILE ARCHIVED ON 16:10:53 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:44:31 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 14.569 (3)
+  exclusion.robots.policy: 0.278
+  captures_list: 186.591
+  esindex: 0.015
+  exclusion.robots: 0.291
+  RedisCDXSource: 1.425
+  load_resource: 333.485
+  PetaboxLoader3.datanode: 183.608 (5)
+  PetaboxLoader3.resolve: 267.549 (3)
+  LoadShardBlock: 167.037 (3)
+*/

@@ -1,0 +1,46 @@
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi {
+	clear: both;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #BFBFBF;
+	padding: 3px 5px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #000;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
+
+/*
+     FILE ARCHIVED ON 07:12:51 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:04:43 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 16.698 (3)
+  exclusion.robots.policy: 0.195
+  RedisCDXSource: 22.681
+  LoadShardBlock: 238.313 (3)
+  PetaboxLoader3.resolve: 104.893 (3)
+  esindex: 0.013
+  captures_list: 281.4
+  exclusion.robots: 0.211
+  PetaboxLoader3.datanode: 247.701 (5)
+  load_resource: 226.444
+*/

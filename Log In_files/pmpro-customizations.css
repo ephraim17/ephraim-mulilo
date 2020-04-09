@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.pmpro-checkout #pmpro_payment_method span {
+	display: inline-block;
+}
+.pmpro-checkout #pmpro_payment_method span a {
+	background-position: bottom left;
+	background-repeat: no-repeat; 
+	background-size: contain;
+	border: none;
+	display: inline-block; 
+	font-size: 16px;
+	font-size: 1rem;
+	padding-bottom: 80px;
+	width: 50%;
+}
+.pmpro-checkout span.gateway_authorizenet, 
+.pmpro-checkout span.gateway_braintree,
+.pmpro-checkout span.gateway_cybersource,
+.pmpro-checkout span.gateway_paypal,
+.pmpro-checkout span.gateway_stripe, 
+.pmpro-checkout span.gateway_twocheckout {
+	width: 60%; 
+}
+.pmpro-checkout span.gateway_paypalexpress {
+	width: 35%;
+}
+.pmpro-checkout span.gateway_authorizenet a, 
+.pmpro-checkout span.gateway_braintree a,
+.pmpro-checkout span.gateway_cybersource a,
+.pmpro-checkout span.gateway_paypal a,
+.pmpro-checkout span.gateway_stripe a, 
+.pmpro-checkout span.gateway_twocheckout a {
+	background-image: url(/web/20181009071317im_/http://www.bluedragonflycenter.com/wp-content/plugins/pmpro-customizations-css/images/cc-horizontal.jpg); 
+}
+.pmpro-checkout span.gateway_paypalexpress a {
+	background-image: url(/web/20181009071317im_/http://www.bluedragonflycenter.com/wp-content/plugins/pmpro-customizations-css/images/paypal.jpg);
+}
+
+@media (max-width:768px) {
+	.pmpro-checkout #pmpro_payment_method span {display: block; width: 100%; }
+}
+
+/*
+     FILE ARCHIVED ON 07:13:17 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:55:48 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 16.343 (3)
+  exclusion.robots: 0.751
+  exclusion.robots.policy: 0.737
+  captures_list: 522.138
+  RedisCDXSource: 160.956
+  esindex: 0.01
+  load_resource: 679.765
+  LoadShardBlock: 340.836 (3)
+  PetaboxLoader3.resolve: 532.302 (3)
+  PetaboxLoader3.datanode: 402.456 (5)
+*/

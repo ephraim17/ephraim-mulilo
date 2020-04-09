@@ -1,0 +1,23 @@
+
+if (!window['YT']) {var YT = {loading: 0,loaded: 0};}if (!window['YTConfig']) {var YTConfig = {'host': 'http://web.archive.org/web/20181112040115/http://www.youtube.com'};}if (!YT.loading) {YT.loading = 1;(function(){var l = [];YT.ready = function(f) {if (YT.loaded) {f();} else {l.push(f);}};window.onYTReady = function() {YT.loaded = 1;for (var i = 0; i < l.length; i++) {try {l[i]();} catch (e) {}}};YT.setConfig = function(c) {for (var k in c) {if (c.hasOwnProperty(k)) {YTConfig[k] = c[k];}}};var a = document.createElement('script');a.type = 'text/javascript';a.id = 'www-widgetapi-script';a.src = 'http://web.archive.org/web/20181112040115/https://s.ytimg.com/yts/jsbin/www-widgetapi-vfl8_u944/www-widgetapi.js';a.async = true;var c = document.currentScript;if (c) {var n = c.nonce || c.getAttribute('nonce');if (n) {a.setAttribute('nonce', n);}}var b = document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a, b);})();}
+/*
+     FILE ARCHIVED ON 04:01:15 Nov 12, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:46:04 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 429.679 (3)
+  captures_list: 548.839
+  exclusion.robots: 0.311
+  CDXLines.iter: 29.056 (3)
+  esindex: 0.027
+  exclusion.robots.policy: 0.289
+  RedisCDXSource: 7.766
+  load_resource: 660.644
+  PetaboxLoader3.resolve: 284.514 (4)
+  PetaboxLoader3.datanode: 533.111 (5)
+*/

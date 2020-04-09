@@ -1,0 +1,68 @@
+
+jQuery.noConflict();
+	
+	jQuery('#tts-all').addClass('tts-current-li');
+	jQuery("#tts-enhance-filter-nav > li").click(function(){
+	    tts_show_enhance(this.id);
+	}).children().click(function(e) {
+	  return false;
+	});
+
+	jQuery("#tts-enhance-filter-nav > li > ul > li").click(function(){
+	    tts_show_enhance(this.id);
+	});
+
+
+//FILTER CODE
+function tts_show_enhance(category) {	
+
+	if (category == "tts-all") {
+        jQuery('#tts-enhance-filter-nav > li').removeClass('tts-current-li');
+        jQuery('#tts-all').addClass('tts-current-li');
+        jQuery('.ttshowcase_rl_box').addClass('tts-current').removeClass('tts-not-current');
+		}
+	
+	else {
+		jQuery('#tts-enhance-filter-nav > li').removeClass('tts-current-li');
+   		jQuery('#' + category).addClass('tts-current-li');  
+		jQuery('.' + category).addClass('tts-current').removeClass('tts-not-current'); 
+		jQuery('.ttshowcase_rl_box:not(.'+ category+')').addClass('tts-not-current').removeClass('tts-current');
+	}
+	
+}
+
+
+
+jQuery(document).ajaxSuccess(function() {
+	jQuery('#tts-all').addClass('ts-current-li');
+	jQuery("#tts-enhance-filter-nav > li").click(function(){
+	    tts_show_enhance(this.id);
+	}).children().click(function(e) {
+	  return false;
+	});
+
+	jQuery("#tts-enhance-filter-nav > li > ul > li").click(function(){
+	    tts_show_enhance(this.id);
+	});
+});
+/*
+     FILE ARCHIVED ON 16:26:36 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:44:32 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.04
+  captures_list: 303.467
+  RedisCDXSource: 8.645
+  exclusion.robots.policy: 0.332
+  PetaboxLoader3.datanode: 260.689 (5)
+  load_resource: 896.229
+  PetaboxLoader3.resolve: 746.707 (3)
+  LoadShardBlock: 265.517 (3)
+  exclusion.robots: 0.352
+  CDXLines.iter: 21.782 (3)
+*/

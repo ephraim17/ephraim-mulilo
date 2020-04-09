@@ -1,0 +1,63 @@
+/**
+ * === WP Tiles WUD ===
+ * Contributors: wistudatbe
+ * Plugin Name: WP Tiles WUD
+ * Description: Use simply the category or tag SLUG and add responsive, customizable and dynamic tiles to any WordPress posts and pages.
+ * Author: Danny WUD
+ * Fade out/in the tiles.
+ * Release 1.0.2 -> added function($) and (jQuery) to works with the Wordpress jQuery version.
+ */
+//<![CDATA[
+(function($) { 
+$(document).ready(function(e)
+{
+	var WudIncDir = wud_php.wud_url;
+	var count = 0 ;
+	
+	/* CLICK wp-tiles-wud-base */
+	$("#wud_base").click(function(e){	 
+		var pos = $(window).scrollTop();
+		/* Remember pos untill loading wud_button */
+		localStorage.setItem("pos", pos);
+	});	
+
+	/* GO TO once wp-tiles-wud-page */
+	if (document.getElementById("wud_button")) {
+		$("#wud_fade").hide();
+		$('#wud_fade').fadeIn(1400);
+		var pos = localStorage.getItem("pos");
+		$('html, body').animate({scrollTop : pos},0);
+		localStorage.removeItem(pos);
+    }
+
+	/* GO TO once wp-tiles-wud-page */
+	if (document.getElementById("wud_fade_home")) {	
+		$("#wud_fade_home").hide();
+		$('#wud_fade_home').fadeIn(1400);
+    }
+	
+});
+})(jQuery);
+//]]> 
+
+/*
+     FILE ARCHIVED ON 07:45:22 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:00:46 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots.policy: 0.182
+  PetaboxLoader3.resolve: 336.582 (3)
+  captures_list: 1259.587
+  RedisCDXSource: 24.931
+  LoadShardBlock: 1212.579 (3)
+  esindex: 0.015
+  load_resource: 381.445
+  CDXLines.iter: 17.789 (3)
+  PetaboxLoader3.datanode: 1253.046 (5)
+  exclusion.robots: 0.196
+*/

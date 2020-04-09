@@ -1,0 +1,71 @@
+jQuery(document).ready( function() {
+
+	/* Use backticks instead of <code> for the Code button in the editor */
+	if ( typeof( edButtons ) !== 'undefined' ) {
+		edButtons[110] = new QTags.TagButton( 'code', 'code', '`', '`', 'c' );
+		QTags._buttonsInit();
+	}
+
+	/* Tab from topic title */
+	jQuery( '#bbp_topic_title' ).bind( 'keydown.editor-focus', function(e) {
+		if ( e.which !== 9 )
+			return;
+
+		if ( !e.ctrlKey && !e.altKey && !e.shiftKey ) {
+			if ( typeof( tinymce ) !== 'undefined' ) {
+				if ( ! tinymce.activeEditor.isHidden() ) {
+					var editor = tinymce.activeEditor.editorContainer;
+					jQuery( '#' + editor + ' td.mceToolbar > a' ).focus();
+				} else {
+					jQuery( 'textarea.bbp-the-content' ).focus();
+				}
+			} else {
+				jQuery( 'textarea.bbp-the-content' ).focus();
+			}
+
+			e.preventDefault();
+		}
+	});
+
+	/* Shift + tab from topic tags */
+	jQuery( '#bbp_topic_tags' ).bind( 'keydown.editor-focus', function(e) {
+		if ( e.which !== 9 )
+			return;
+
+		if ( e.shiftKey && !e.ctrlKey && !e.altKey ) {
+			if ( typeof( tinymce ) !== 'undefined' ) {
+				if ( ! tinymce.activeEditor.isHidden() ) {
+					var editor = tinymce.activeEditor.editorContainer;
+					jQuery( '#' + editor + ' td.mceToolbar > a' ).focus();
+				} else {
+					jQuery( 'textarea.bbp-the-content' ).focus();
+				}
+			} else {
+				jQuery( 'textarea.bbp-the-content' ).focus();
+			}
+
+			e.preventDefault();
+		}
+	});
+});
+/*
+     FILE ARCHIVED ON 09:15:51 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:44:24 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 12.185 (3)
+  exclusion.robots.policy: 0.14
+  RedisCDXSource: 1.31
+  LoadShardBlock: 336.518 (3)
+  PetaboxLoader3.resolve: 246.95 (3)
+  esindex: 0.012
+  captures_list: 352.535
+  exclusion.robots: 0.15
+  PetaboxLoader3.datanode: 305.802 (5)
+  load_resource: 303.254
+*/

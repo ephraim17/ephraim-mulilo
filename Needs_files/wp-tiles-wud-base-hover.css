@@ -1,0 +1,45 @@
+  
+.wp-tiles-wud-wrapper:hover > .wp-tiles-wud-image{ 
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    transform: scale(1.09);	
+	filter:gray alpha(opacity=50);
+	-webkit-filter:grayscale(50%);
+	filter: grayscale(50%);
+	-webkit-backface-visibility:hidden;
+	transform-origin: top left;
+}
+
+.wp-tiles-wud-wrapper-box:hover > .wp-tiles-wud-image{ 
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    transform: scale(1.09);	
+	filter:gray alpha(opacity=50);
+	-webkit-filter:grayscale(50%);
+	filter: grayscale(50%);
+	-webkit-backface-visibility:hidden;
+	transform-origin: top left;
+}
+/*
+     FILE ARCHIVED ON 10:01:22 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:49:04 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.216
+  CDXLines.iter: 18.049 (3)
+  captures_list: 106.867
+  LoadShardBlock: 83.953 (3)
+  exclusion.robots.policy: 0.2
+  PetaboxLoader3.datanode: 182.495 (5)
+  load_resource: 244.548
+  RedisCDXSource: 0.866
+  esindex: 0.016
+  PetaboxLoader3.resolve: 81.819 (2)
+*/

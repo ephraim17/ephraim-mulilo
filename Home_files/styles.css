@@ -1,0 +1,1236 @@
+/*
+
+Version: 0.2
+Last Modified: July 16
+Author: Carlos Moreira;
+
+*/
+
+
+/* Pagination Styles */
+
+.ttshowcase_pager {
+	padding:10px;
+	margin-top:20px;
+	text-align: center;
+}
+
+.ttshowcase_next,
+.ttshowcase_previous,
+.ttshowcase_page {
+	padding:5px;
+	margin:5px;
+}
+.ttshowcase_current_page {
+border:3px solid #CCC;
+}
+
+
+/* End Pagination Styles */
+
+
+.ttshowcase_wrap img {
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	max-width: none;
+
+}
+
+.ttshowcase_rating .fa-star, .ttshowcase_rating .fa-star-half-o {
+
+	color: gold;
+	padding-right: 2px;
+
+}
+
+.ttshowcase_rating .fa-star-o {
+
+	color: gold;
+	padding-right: 2px;
+	opacity: 0.5;
+
+}
+
+
+.ttshowcase_rl_breed {
+	padding: 3px;
+}
+
+.ttshowcase_clear {
+	clear: both;
+	display:block;
+	height: 0px;
+}
+
+.tt_review_title {
+	font-weight: bold;
+	padding-bottom: 3px;
+}
+
+.tt_category_title {
+	font-weight: bold;
+}
+
+.tt_italic {
+	font-style: italic;
+}
+
+.ttshowcase_rl_box {
+	
+}
+
+.ttshowcase_rl_info_wrap, .ttshowcase_rl_quote {
+	
+}
+
+.ttshowcase_rl_readmore {
+	font-size: 0.9em;
+	margin:5px 0px;
+}
+
+
+.ttshowcase_rl_readmore_expand::before {
+	content:'+ ';
+}
+
+.tt_read_more_expand::before {
+	content:'- ';
+}
+
+.ttshowcase_rl_quote {
+
+
+}
+
+.ttshowcase_rl_title {
+	font-weight: bold;
+}
+
+.ttshowcase_rl_subtitle, .ttshowcase_rl_date {
+	opacity: 0.8;
+	font-size: 0.9em;
+}
+
+/* Rating CSS 
+
+.tt_theme_speech .ttshowcase_rl_rating {
+	  unicode-bidi: bidi-override;
+	  direction: rtl;
+	  text-align: center;
+	}
+.tt_theme_speech .ttshowcase_rl_rating > span {
+	  display: inline-block;
+	  position: relative;
+	  width: 1.1em;
+	  color: transparent;
+	}
+.tt_theme_speech .ttshowcase_rl_rating > span:before {
+	   content: "\2605";
+	   position: absolute;
+	   left: 0; 
+	   color: gold;
+	}
+
+*/
+
+/* Image Settings 
+'grayscale' => 'Grayscale',
+'white-border' => 'White Border',
+'shadow-highlight' => 'Shadow Highlight'
+*/
+
+
+/* Shadow Highlight */
+.tt_img_shadow-highlight img {
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.8);
+	margin:10px;
+}
+
+/* White Border */
+
+.tt_img_white-border img {
+	border:3px solid #FFFFFF;
+	box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.8);
+	transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -ms-transition: 0.6s;
+    margin:10px;
+}
+
+.tt_img_white-border img:hover {
+	border:3px solid #FFFFFF;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+	transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -ms-transition: 0.6s;
+    margin:10px;
+}
+
+/* Grayscale */
+
+.tt_img_grayscale  {
+	 filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+	transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -ms-transition: 0.6s;
+    opacity: 0.6;
+}
+
+.tt_img_grayscale:hover {
+	  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+	opacity:1;
+	
+}
+
+/* Grayscale */
+
+.tt_img_transparency  {
+	transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -ms-transition: 0.6s;
+    opacity: 0.6;
+}
+
+.tt_img_transparency:hover {
+
+	opacity:1;
+	
+}
+
+/* Info Settings 
+
+'info-below' => 'Information Below',
+'info-left' => 'Information Left',
+'info-right' => 'Information Right'
+
+*/
+
+.ttshowcase_rl_aditional_info {
+
+}
+
+.tt_float_left {
+	float:left;
+}
+
+.tt_float_right {
+	float:right;
+}
+
+
+.tt_vertical_center {
+	vertical-align: center;
+}
+
+
+.tt_info-below, .tt_info-above {
+	width:100%;
+	display:block;
+	
+}
+
+.tt_quote_info-below, .tt_quote_info-above {
+	width:100%;
+	display: block;
+}
+
+.tt_info-left {
+	padding-right:10px;
+	display: table-cell;
+	vertical-align:top;
+}
+
+.tt_quote_info-left {
+	
+	display: table-cell;
+	vertical-align:top;
+	width:100%;
+
+}
+
+.tt_info-right {
+	display: table-cell;
+	 padding-left:10px;
+	 vertical-align:top;
+}
+
+.tt_quote_info-right {
+	display: table-cell;
+	vertical-align:top;
+}
+
+.tt_table_cell_right {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+
+.tt_table_align {
+	display:table;
+}
+
+.tt_info_left_alignment {
+	display:table-cell;
+	vertical-align:top;
+}
+
+.tt_img_left_alignment {
+	display:table-cell;
+	vertical-align:top;
+	padding-right:10px;
+	padding-left: 10px;
+}
+
+/* For the Right Alignment */
+
+.tt_img_right_alignment {
+	float:right;
+	display:inline-block;
+}
+
+.tt_info_right_alignment {
+	float:right;
+	padding-right: 20px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+
+
+/* FILTER CLASSES */
+
+ul#tts-filter-nav, 
+ul#tts-enhance-filter-nav,
+ul#tts-isotope-filter-nav {
+  text-align: center;
+  display: block;
+  margin: 20px 0px 30px 0px;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  clear: both;
+  z-index: 9999999999;
+}
+ul#tts-filter-nav li, 
+ul#tts-enhance-filter-nav li,
+ul#tts-isotope-filter-nav li  {
+  font: 1em sans-serif;
+  display: inline-block;
+  margin: 0px 2px;
+  position: relative;
+  padding: 10px 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius:3px;
+}
+ul#tts-filter-nav li:hover, 
+ul#tts-enhance-filter-nav li:hover,
+ul#tts-isotope-filter-nav li:hover   {
+  background: #666;
+  color: #fff;
+}
+ul#tts-filter-nav li ul, 
+ul#tts-enhance-filter-nav li ul,
+ul#tts-isotope-filter-nav li ul  {
+  z-index: 9999999999;
+  padding: 0;
+  margin:0;
+  position: absolute;
+  top: 35px;
+  left: -2px;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul#tts-filter-nav li ul li, 
+ul#tts-enhance-filter-nav li ul li,
+ul#tts-isotope-filter-nav li ul li
+ { 
+  background: #666; 
+  display: block; 
+  color: #fff;
+  /*text-shadow: 0 -1px 0 #000;*/
+  border-radius: 0px;
+  text-align: left;
+}
+ul#tts-filter-nav li ul li:hover, 
+ul#tts-enhance-filter-nav li ul li:hover,
+ul#tts-isotope-filter-nav li ul li:hover  
+{ background: #444; }
+
+ul#tts-filter-nav li:hover ul, 
+ul#tts-enhance-filter-nav li:hover ul,
+ul#tts-isotope-filter-nav li:hover ul  {
+  display: block; 
+  opacity: 1;
+  visibility: visible;
+}
+
+ul#tts-filter-nav li.tts-current-li, 
+ul#tts-enhance-filter-nav li.tts-current-li,
+ul#tts-isotope-filter-nav li.tts-current-li  {
+	background:#666;
+	color:#FFF;
+}
+
+/*
+ul#tts-filter-nav li.ts-current-li, 
+ul#tts-enhance-filter-nav li.ts-current-li {
+  color:#ea7524;
+}
+*/
+
+
+.tts-not-current {
+	opacity:0.3;
+	filter:alpha(opacity=0.3);
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+	-o-transition: 0.6s;
+	-ms-transition: 0.6s;
+			
+}
+.tts-current {
+	opacity:1;
+	filter:alpha(opacity=100);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	 transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    -ms-transition: 0.6s;	
+}
+
+
+/* THEMES */
+
+
+/*
+
+SPEECH 
+
+*/
+
+
+
+
+.tt_theme_speech .tt_info-left {
+	padding-right:20px;
+}
+
+.tt_theme_speech blockquote {
+	/*background: url('/web/20181009072315im_/http://www.bluedragonflycenter.com/wp-content/plugins/Testimonials_Showcase/layouts/grid/imgs/quote.png') no-repeat 0px 0px;*/
+  	padding: 10px 10px 10px 25px;
+  	border: none;
+  	margin: 0;
+  	border-radius: 0;
+  	color: inherit;
+  	font-size: inherit;
+  	position:relative;
+}
+
+.tt_theme_speech blockquote:before {
+    content: "\f10d"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    opacity: 0.5;
+}
+
+/* Information Left, Speech Buble Right */
+
+.tt_theme_speech .tt_quote_info-left .ttshowcase_rl_quote{
+	position:relative;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	
+}
+
+.tt_theme_speech .tt_quote_info-left .ttshowcase_rl_quote:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 10px 10px 0;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -10px;
+left: -10px;
+top: 30px;
+color:transparent;
+
+}
+
+/* Information Right, Speech Buble Left */
+
+.tt_theme_speech .tt_quote_info-right .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 10px;
+	
+	
+
+}
+
+.tt_theme_speech .tt_quote_info-right .ttshowcase_rl_quote:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 0 10px 10px;
+display: block;
+width: 0;
+z-index: 1;
+right: -10px;
+top: 30px;
+color:transparent;
+}
+
+.tt_theme_speech .tt_info-right {
+	padding-left: 20px;
+}
+
+/* Info Above, Speech Below */
+
+.tt_theme_speech .tt_quote_info-below .ttshowcase_rl_quote
+{
+position: relative;
+padding: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+.tt_theme_speech .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 10px 0;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -10px;
+color:transparent;
+
+}
+
+.tt_theme_speech .tt_text_left .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	left: 30px;
+}
+
+.tt_theme_speech .tt_text_center .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	left: 48%;
+}
+
+.tt_theme_speech .tt_text_right .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	right: 30px;
+}
+
+/* Info Below, Speech Above */
+
+.tt_theme_speech .tt_quote_info-above .ttshowcase_rl_quote
+{
+position: relative;
+padding: 10px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+margin-top: 20px;
+}
+
+.tt_theme_speech .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 10px 10px;
+display: block;
+width: 0;
+z-index: 1;
+top: -10px;
+color:transparent;
+}
+
+.tt_theme_speech .tt_text_left .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	left: 30px;
+}
+
+.tt_theme_speech .tt_text_center .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	left: 48%;
+}
+.tt_theme_speech .tt_text_right .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	right: 40px;
+}
+
+
+/*
+
+FLAT 
+
+*/
+
+
+.tt_theme_flat {
+
+
+}
+
+
+
+.tt_theme_flat .tt_info-left {
+	padding-right:20px;
+}
+
+.tt_theme_flat blockquote {
+	/*background: url('/web/20181009072315im_/http://www.bluedragonflycenter.com/wp-content/plugins/Testimonials_Showcase/layouts/grid/imgs/quote.png') no-repeat 0px 0px;*/
+  	padding: 10px 10px 10px 20px;
+  	border: none;
+  	margin: 0;
+  	border-radius: 0;
+  	color: inherit;
+  	font-size: inherit;
+  	position: relative;
+}
+
+.tt_theme_flat blockquote:before {
+    content: "\f10d"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    opacity: 0.5;
+}
+
+/* Information Left, flat Buble Right */
+
+.tt_theme_flat .tt_quote_info-left .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	padding: 10px;
+	
+}
+
+.tt_theme_flat .tt_quote_info-left .ttshowcase_rl_quote:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 10px 10px 0;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -10px;
+left: -10px;
+top: 30px;
+color:transparent;
+}
+
+/* Information Right, flat Buble Left */
+
+.tt_theme_flat .tt_quote_info-right .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	padding: 10px;
+	
+	
+
+}
+
+.tt_theme_flat .tt_quote_info-right .ttshowcase_rl_quote:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 0 10px 10px;
+display: block;
+width: 0;
+z-index: 1;
+right: -10px;
+top: 30px;
+color:transparent;
+}
+
+.tt_theme_flat .tt_info-right {
+	padding-left: 20px;
+}
+
+/* Info Above, flat Below */
+
+.tt_theme_flat .tt_quote_info-below .ttshowcase_rl_quote
+{
+position: relative;
+
+padding: 10px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+margin-bottom: 20px;
+}
+
+.tt_theme_flat .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 10px 0;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -10px;
+color:transparent;
+
+}
+
+.tt_theme_flat .tt_text_left .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	left: 30px;
+}
+
+.tt_theme_flat .tt_text_center .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	left: 48%;
+}
+
+.tt_theme_flat .tt_text_right .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	right: 30px;
+}
+
+/* Info Below, flat Above */
+
+.tt_theme_flat .tt_quote_info-above .ttshowcase_rl_quote
+{
+position: relative;
+
+padding: 10px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+margin-top: 20px;
+}
+
+.tt_theme_flat .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 10px 10px;
+display: block;
+width: 0;
+z-index: 1;
+top: -10px;
+color:transparent;
+}
+
+.tt_theme_flat .tt_text_left .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	left: 30px;
+}
+
+.tt_theme_flat .tt_text_center .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	left: 48%;
+}
+.tt_theme_flat .tt_text_right .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	right: 40px;
+}
+
+
+/*
+
+QUOTES
+
+*/
+
+.tt_quote_transparency {
+	opacity:0.2;
+}
+
+.tt_theme_quotes {
+
+
+}
+
+
+
+.tt_theme_quotes .tt_info-left {
+	padding-right:20px;
+}
+
+.tt_theme_quotes .ttshowcase_rl_quote {
+	/*background: url('/web/20181009072315im_/http://www.bluedragonflycenter.com/wp-content/plugins/Testimonials_Showcase/layouts/grid/imgs/quote.png') no-repeat 0px 0px;*/
+  	padding: 10px 10px 10px 20px;
+  	font-style: italic;
+}
+
+/* Information Left, quotes Buble Right */
+
+.tt_theme_quotes .tt_quote_info-left .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
+}
+
+/* Information Right, quotes Buble Left */
+
+.tt_theme_quotes .tt_quote_info-right .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
+	
+
+}
+
+
+.tt_theme_quotes .tt_info-right {
+	padding-left: 20px;
+}
+
+/* Info Above, quotes Below */
+
+.tt_theme_quotes .tt_quote_info-below .ttshowcase_rl_quote
+{
+position: relative;
+
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+margin-bottom: 5px;
+}
+
+
+
+/* Info Below, quotes Above */
+
+.tt_theme_quotes .tt_quote_info-above .ttshowcase_rl_quote
+{
+position: relative;
+
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+margin-top: 5px;
+}
+
+/*
+
+SEPERATOR
+
+*/
+
+
+.tt_theme_separator .ttshowcase_rl_box {
+border-bottom: 1px dashed #CCC;
+
+}
+
+.tt_theme_separator blockquote {
+	/*background: url('/web/20181009072315im_/http://www.bluedragonflycenter.com/wp-content/plugins/Testimonials_Showcase/layouts/grid/imgs/quote.png') no-repeat 0px 0px;*/
+  	padding: 10px 10px 10px 20px;
+  	border: none;
+  	margin: 0;
+  	border-radius: 0;
+  	color: inherit;
+  	font-size: inherit;
+  	position: relative;
+}
+
+.tt_theme_separator blockquote:before {
+    content: "\f10d"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    opacity: 0.5;
+}
+
+
+.tt_theme_separator .tt_info-left {
+	padding-right:20px;
+}
+
+.tt_theme_separator .ttshowcase_rl_quote .ttshowcase_rl_quote {
+  	padding: 10px 10px 10px 20px;
+  	font-style: italic;
+}
+
+/* Information Left, quotes Buble Right */
+
+.tt_theme_separator .tt_quote_info-left .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
+}
+
+/* Information Right, quotes Buble Left */
+
+.tt_theme_separator .tt_quote_info-right .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
+	
+
+}
+
+
+.tt_theme_separator .tt_info-right {
+	padding-left: 20px;
+}
+
+/* Info Above, quotes Below */
+
+.tt_theme_separator .tt_quote_info-below .ttshowcase_rl_quote
+{
+position: relative;
+
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+margin-bottom: 5px;
+}
+
+
+
+/* Info Below, quotes Above */
+
+.tt_theme_separator .tt_quote_info-above .ttshowcase_rl_quote
+{
+position: relative;
+
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+margin-top: 5px;
+}
+
+
+
+/*
+
+card 
+
+*/
+
+
+
+
+
+
+.tt_theme_card .tt_info-left {
+	padding:10px 15px 10px 10px;
+}
+
+.tt_theme_card blockquote {
+	/*background: url('/web/20181009072315im_/http://www.bluedragonflycenter.com/wp-content/plugins/Testimonials_Showcase/layouts/grid/imgs/quote.png') no-repeat 0px 0px;*/
+  	padding: 10px 10px 10px 20px;
+  	border: none;
+  	margin: 0;
+  	border-radius: 0;
+  	color: inherit;
+  	font-size: inherit;
+  	position: relative;
+}
+
+.tt_theme_card blockquote:before {
+    content: "\f10d"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    opacity: 0.5;
+}
+
+/* Information Left, card Buble Right */
+
+.tt_theme_card .tt_quote_info-left .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	padding: 10px;
+	
+}
+
+.tt_theme_card .tt_quote_info-left .ttshowcase_rl_quote:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 10px 10px 0;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -10px;
+left: -10px;
+top: 30px;
+color:transparent;
+}
+
+/* Information Right, card Buble Left */
+
+.tt_theme_card .tt_quote_info-right .ttshowcase_rl_quote {
+	position:relative;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	padding: 10px;
+	
+	
+
+}
+
+.tt_theme_card .tt_quote_info-right .ttshowcase_rl_quote:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 0 10px 10px;
+display: block;
+width: 0;
+z-index: 1;
+right: -10px;
+top: 30px;
+color:transparent;
+}
+
+.tt_theme_card .tt_info-right {
+	padding: 10px 10px 10px 35px;
+}
+
+/* Info Above, card Below */
+
+.tt_theme_card .tt_info-above{
+
+padding:10px 0px 15px 0px;
+
+}
+
+.tt_theme_card .tt_quote_info-below .ttshowcase_rl_quote
+{
+position: relative;
+
+padding: 10px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+margin-bottom: 0px;
+}
+
+.tt_theme_card .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 10px 0;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -10px;
+color:transparent;
+
+}
+
+.tt_theme_card .tt_text_left .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	left: 30px;
+}
+
+.tt_theme_card .tt_text_center .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	left: 48%;
+}
+
+.tt_theme_card .tt_text_right .tt_quote_info-below .ttshowcase_rl_quote:after
+{
+	right: 30px;
+}
+
+/* Info Below, card Above */
+
+.tt_theme_card .tt_info-below{
+
+padding:15px 0px 10px 0px;
+
+}
+
+.tt_theme_card .tt_quote_info-above .ttshowcase_rl_quote
+{
+position: relative;
+padding: 10px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+margin-top: 0px;
+}
+
+.tt_theme_card .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 10px 10px;
+display: block;
+width: 0;
+z-index: 1;
+top: -10px;
+color:transparent;
+}
+
+.tt_theme_card .tt_text_left .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	left: 30px;
+}
+
+.tt_theme_card .tt_text_center .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	left: 48%;
+}
+.tt_theme_card .tt_text_right .tt_quote_info-above .ttshowcase_rl_quote:after
+{
+	right: 40px;
+}
+
+
+/* Responsive Behaviours */
+@media only screen and (max-width : 650px) {
+        
+		.ttshowcase_rl_quote p {
+            margin:0px;
+            padding:0px;
+        }
+        
+        .tt_info-left, 
+        .tt_info-right {
+	    display: block;
+        } 
+ 
+        .ttshowcase_rl_image img, .ttshowcase_rl_image img:hover  {
+	    text-align: center;
+	    margin:15px auto 5px auto;
+        } 
+        .ttshowcase_rl_aditional_info {
+            margin:10px;
+        }
+        
+
+
+		.ttshowcase_wrap .tt_quote_info-right .ttshowcase_rl_quote:after,
+        .ttshowcase_wrap .tt_quote_info-left .ttshowcase_rl_quote:after 
+		{
+			display:none;
+
+		}
+
+		
+
+
+
+    }
+
+/*
+     FILE ARCHIVED ON 07:23:15 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:44:21 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.191
+  CDXLines.iter: 13.683 (3)
+  captures_list: 204.276
+  LoadShardBlock: 179.266 (3)
+  exclusion.robots.policy: 0.177
+  PetaboxLoader3.datanode: 54.655 (4)
+  load_resource: 105.454
+  RedisCDXSource: 8.093
+  esindex: 0.012
+  PetaboxLoader3.resolve: 155.707 (2)
+*/

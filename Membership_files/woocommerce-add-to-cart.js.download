@@ -1,0 +1,40 @@
+window.jQuery( document ).ready( function ( $ ) {
+	$( 'body' ).on( 'adding_to_cart', function ( event, $button, data ) {
+		$button && $button.hasClass( 'vc_gitem-link' ) && $button
+			.addClass( 'vc-gitem-add-to-cart-loading-btn' )
+			.parents( '.vc_grid-item-mini' )
+			.addClass( 'vc-woocommerce-add-to-cart-loading' )
+			.append( $( '<div class="vc_wc-load-add-to-loader-wrapper"><div class="vc_wc-load-add-to-loader"></div></div>' ) );
+	} ).on( 'added_to_cart', function ( event, fragments, cart_hash, $button ) {
+		if ( 'undefined' === typeof($button) ) {
+			$button = $( '.vc-gitem-add-to-cart-loading-btn' );
+		}
+		$button && $button.hasClass( 'vc_gitem-link' ) && $button
+			.removeClass( 'vc-gitem-add-to-cart-loading-btn' )
+			.parents( '.vc_grid-item-mini' )
+			.removeClass( 'vc-woocommerce-add-to-cart-loading' )
+			.find( '.vc_wc-load-add-to-loader-wrapper' ).remove();
+	} );
+} );
+
+/*
+     FILE ARCHIVED ON 14:15:00 Oct 09, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:17:54 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.026
+  RedisCDXSource: 1.805
+  LoadShardBlock: 117.095 (3)
+  exclusion.robots.policy: 0.344
+  PetaboxLoader3.datanode: 145.54 (5)
+  load_resource: 220.233
+  exclusion.robots: 0.368
+  PetaboxLoader3.resolve: 144.796 (2)
+  captures_list: 143.724
+  CDXLines.iter: 18.734 (3)
+*/

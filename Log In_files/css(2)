@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(http://web.archive.org/web/20181020083512im_/http://fonts.gstatic.com/s/oswald/v16/TK3hWkUHHAIjg75-sh0Tus9H.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://web.archive.org/web/20181020083512im_/http://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8D.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(http://web.archive.org/web/20181020083512im_/http://fonts.gstatic.com/s/oswald/v16/TK3hWkUHHAIjg75-ohoTus9H.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 08:35:12 Oct 20, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:00:13 Apr 08, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  CDXLines.iter: 30.552 (3)
+  exclusion.robots.policy: 0.282
+  captures_list: 318.948
+  esindex: 0.027
+  exclusion.robots: 0.307
+  RedisCDXSource: 3.08
+  load_resource: 373.773
+  LoadShardBlock: 236.232 (3)
+  PetaboxLoader3.resolve: 225.713 (3)
+  PetaboxLoader3.datanode: 347.232 (5)
+*/
