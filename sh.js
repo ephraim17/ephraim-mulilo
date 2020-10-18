@@ -1,3 +1,5 @@
+console.log("I am loading from github");
+
 //Declaring of initial variables
 var oldURL = document.referrer;
 
@@ -36,7 +38,7 @@ console.log((window.location.href == home) || (window.location.href == account_p
 
 if ((window.location.href == home) || (window.location.href == account_page)) {
     
-    console.log("I am loading from github");
+ 
 
    
     var retrievedObject = localStorage.getItem('Test'); 
