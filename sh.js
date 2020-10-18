@@ -35,6 +35,8 @@ if (window.location.href.includes("login")) {
 console.log((window.location.href == home) || (window.location.href == account_page));
 
 if ((window.location.href == home) || (window.location.href == account_page)) {
+    
+    console.log("I am loading from github");
 
    
     var retrievedObject = localStorage.getItem('Test'); 
