@@ -1,4 +1,4 @@
-console.log("I am loading from github");
+console.log("I am still loading from github");
 
 //Declaring of initial variables
 var oldURL = document.referrer;
