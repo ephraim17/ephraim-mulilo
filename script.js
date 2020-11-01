@@ -1,4 +1,4 @@
-console.log("I am still loading from github");
+// console.log("I am still loading from github");
 
 //Declaring of initial variables
 var oldURL = document.referrer;
@@ -27,14 +27,14 @@ if (window.location.href.includes("login")) {
 
     var Test = __st;
     localStorage.setItem('Test', JSON.stringify(Test));
-    console.log('This is test ' + Test);
+//     console.log('This is test ' + Test);
 };
 
 // End of Login Page script
 
 //Start of script to run on Homepage or Accounts page
 
-console.log((window.location.href == home) || (window.location.href == account_page));
+// console.log((window.location.href == home) || (window.location.href == account_page));
 
 if ((window.location.href == home) || (window.location.href == account_page)) {
     
@@ -42,12 +42,12 @@ if ((window.location.href == home) || (window.location.href == account_page)) {
 
    
     var retrievedObject = localStorage.getItem('Test'); 
-    console.log('retrived object ' + retrievedObject);
+//     console.log('retrived object ' + retrievedObject);
     var domain = '';
     var theUrl = JSON.parse(retrievedObject)["pageurl"];
-    console.log(theUrl);
+//     console.log(theUrl);
     var url_dec = decodeURIComponent(theUrl);
-    console.log(url_dec);
+//     console.log(url_dec);
 
    if (oldURL.includes('challenge')) {
 
