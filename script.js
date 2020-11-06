@@ -1,2 +1,87 @@
-console.log('obfuscated');
-var _0x31c8=['removeItem','referrer','hostname','/account','host','concat','checkout_url','replace','https://','.myshopify.com','setItem','/account/login?checkout_url=https://','href','getItem','location','includes','parse','shop','Test','stringify','login','pageurl'];(function(_0x2ef5bd,_0x31c8e5){var _0x51aa4e=function(_0x45ce81){while(--_0x45ce81){_0x2ef5bd['push'](_0x2ef5bd['shift']());}};_0x51aa4e(++_0x31c8e5);}(_0x31c8,0x1d2));var _0x51aa=function(_0x2ef5bd,_0x31c8e5){_0x2ef5bd=_0x2ef5bd-0x0;var _0x51aa4e=_0x31c8[_0x2ef5bd];return _0x51aa4e;};var _0x2bb57c=_0x51aa,oldURL=document[_0x2bb57c('0x13')];if(window[_0x2bb57c('0xa')][_0x2bb57c('0x8')]['includes'](_0x2bb57c('0x4')))var home=_0x2bb57c('0x4')+window['location'][_0x2bb57c('0x14')]+'/',account_page=_0x2bb57c('0x4')+window[_0x2bb57c('0xa')][_0x2bb57c('0x14')]+_0x2bb57c('0x15');else var home=window[_0x2bb57c('0xa')]['hostname']+'/',account_page=window[_0x2bb57c('0xa')][_0x2bb57c('0x14')]+_0x2bb57c('0x15');;if(window['location']['href'][_0x2bb57c('0xb')](_0x2bb57c('0x10'))){var Test=__st;localStorage[_0x2bb57c('0x6')](_0x2bb57c('0xe'),JSON[_0x2bb57c('0xf')](Test));};if(window[_0x2bb57c('0xa')][_0x2bb57c('0x8')]==home||window['location'][_0x2bb57c('0x8')]==account_page){var retrievedObject=localStorage[_0x2bb57c('0x9')](_0x2bb57c('0xe')),domain='',theUrl=JSON[_0x2bb57c('0xc')](retrievedObject)[_0x2bb57c('0x11')],url_dec=decodeURIComponent(theUrl);if(oldURL[_0x2bb57c('0xb')]('challenge')){if(url_dec[_0x2bb57c('0xb')](_0x2bb57c('0x2'))){if(url_dec[_0x2bb57c('0xb')](_0x2bb57c('0x5'))){redirectURL=domain['concat'](window[_0x2bb57c('0xa')]['host'],_0x2bb57c('0x7'),Shopify[_0x2bb57c('0xd')],'/');var newCheckout=url_dec[_0x2bb57c('0x3')](redirectURL,'');window[_0x2bb57c('0xa')][_0x2bb57c('0x3')](newCheckout),localStorage[_0x2bb57c('0x12')](_0x2bb57c('0xe'));}else{redirectURL=domain[_0x2bb57c('0x1')](window[_0x2bb57c('0xa')][_0x2bb57c('0x0')],_0x2bb57c('0x7'),window[_0x2bb57c('0xa')]['host'],'/');var newCheckout=url_dec['replace'](redirectURL,'');window[_0x2bb57c('0xa')]['replace'](newCheckout),localStorage[_0x2bb57c('0x12')](_0x2bb57c('0xe'));}};}};
+// console.log("I am still loading from github");
+
+//Declaring of initial variables
+var oldURL = document.referrer;
+
+
+if (window.location.href.includes("https://")){
+
+    var home = ('https://' + window.location.hostname + '/');
+    var account_page = ('https://' + window.location.hostname + '/account');
+
+}
+
+else
+
+{
+    var home = (window.location.hostname + '/');
+    var account_page = (window.location.hostname + '/account');
+};
+
+//End of declaration of initial variables
+//
+
+//Start of Login Page script
+
+if (window.location.href.includes("login")) {
+
+    var Test = __st;
+    localStorage.setItem('Test', JSON.stringify(Test));
+//     console.log('This is test ' + Test);
+};
+
+// End of Login Page script
+
+//Start of script to run on Homepage or Accounts page
+
+// console.log((window.location.href == home) || (window.location.href == account_page));
+
+if ((window.location.href == home) || (window.location.href == account_page)) {
+    
+ 
+
+   
+    var retrievedObject = localStorage.getItem('Test'); 
+//     console.log('retrived object ' + retrievedObject);
+    var domain = '';
+    var theUrl = JSON.parse(retrievedObject)["pageurl"];
+//     console.log(theUrl);
+    var url_dec = decodeURIComponent(theUrl);
+//     console.log(url_dec);
+
+   if (oldURL.includes('challenge')) {
+
+        if (url_dec.includes("checkout_url")) {
+
+            if (url_dec.includes(".myshopify.com")) { 
+
+                redirectURL = domain.concat((window.location['host']), "/account/login?checkout_url=https://", Shopify.shop, "/",);    
+                
+                    var newCheckout = url_dec.replace(redirectURL, '');  
+                    window.location.replace(newCheckout);
+                    localStorage.removeItem("Test");                                       
+                  
+            }  
+
+            else
+
+            {                 
+
+                redirectURL = domain.concat((window.location['host']), "/account/login?checkout_url=https://", (window.location['host']), "/",);
+                    var newCheckout = url_dec.replace(redirectURL, '');  
+                    window.location.replace(newCheckout);
+                    localStorage.removeItem("Test"); 
+
+            }
+
+
+                     
+
+
+        };
+
+
+    }}
+;
+
+// End of home page script
