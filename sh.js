@@ -25,7 +25,7 @@ else
 
 if (window.location.href.includes("login")) {
 
-    console.log('Im on the login page!');
+    console.log('Im on the login page!... and running from github!');
     var Test = __st;
     localStorage.setItem('Test', JSON.stringify(Test));
 //     console.log('This is test ' + Test);
