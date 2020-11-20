@@ -31,9 +31,6 @@ if (window.location.href.includes("login") && window.location.href.includes("che
 
     localStorage.setItem('newTest', newTest);
     
-    var Test = __st;
-    localStorage.setItem('Test', JSON.stringify(Test));
-    // console.log('This is test ' + newTest);
 };
 
 // End of Login Page script
@@ -48,30 +45,24 @@ if ((window.location.href == home) || (window.location.href == account_page)) {
     // var newretrievedObject = localStorage.getItem('newTest');
     // console.log('New retrived object ' + newretrievedObject);
 
-
-    var retrievedObject = localStorage.getItem('Test'); 
     var newretrievedObject = localStorage.getItem('newTest'); 
     console.log('retrived object ' + newretrievedObject);
 
 
     var domain = '';
-    var theUrl = JSON.parse(retrievedObject)["pageurl"];
 //     console.log(theUrl);
-    var url_dec = decodeURIComponent(theUrl);
+    var url_dec = newretrievedObject.replace('https://', '');
 //     console.log(url_dec);
 
    if (oldURL.includes('challenge')) {
 
-        if (url_dec.includes("checkout_url")) {
-
             if (url_dec.includes(".myshopify.com")) { 
 
                 redirectURL = domain.concat((window.location['host']), "/account/login?checkout_url=https://", Shopify.shop, "/",);    
-                
+            
                     var newCheckout = url_dec.replace(redirectURL, '');  
                     window.location.replace(newCheckout);
                     localStorage.removeItem("Test");                                       
-                  
             }  
 
             else
@@ -84,15 +75,10 @@ if ((window.location.href == home) || (window.location.href == account_page)) {
                     localStorage.removeItem("Test"); 
 
             }
-
-
-                     
-
-
         };
 
 
-    }}
+    }
 ;
 
 // End of home page script
