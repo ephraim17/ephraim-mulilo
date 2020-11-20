@@ -29,12 +29,11 @@ if (window.location.href.includes("login") && window.location.href.includes("che
     var newTest = (decodeURIComponent(window.location.href));
     console.log('This is newTest ' + newTest);
 
-    localStorage.setItem('newTest', Test)
+    localStorage.setItem('newTest', newTest);
     
     var Test = __st;
     localStorage.setItem('Test', JSON.stringify(Test));
-    localStorage.setItem('newTest', newTest);
-//     console.log('This is test ' + Test);
+    // console.log('This is test ' + newTest);
 };
 
 // End of Login Page script
@@ -54,7 +53,7 @@ if ((window.location.href == home) || (window.location.href == account_page)) {
     var newretrievedObject = localStorage.getItem('newTest'); 
     console.log('retrived object ' + newretrievedObject);
 
-    
+
     var domain = '';
     var theUrl = JSON.parse(retrievedObject)["pageurl"];
 //     console.log(theUrl);
