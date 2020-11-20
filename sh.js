@@ -28,6 +28,9 @@ if (window.location.href.includes("login")) {
     console.log('Im on the login page!... and running from github');
     var newTest = (decodeURIComponent(window.location.href));
     console.log('This is newTest ' + newTest);
+
+    localStorage.setItem('newTest', Test)
+    
     var Test = __st;
     localStorage.setItem('Test', JSON.stringify(Test));
 //     console.log('This is test ' + Test);
@@ -41,9 +44,8 @@ if (window.location.href.includes("login")) {
 
 if ((window.location.href == home) || (window.location.href == account_page)) {
     
- 
-
-   
+    var newretrievedObject = localStorage.getItem('newTest');
+    console.log('New retrived object ' + newretrievedObject);
     var retrievedObject = localStorage.getItem('Test'); 
 //     console.log('retrived object ' + retrievedObject);
     var domain = '';
