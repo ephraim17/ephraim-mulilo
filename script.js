@@ -23,9 +23,9 @@ else
 
 //Start of Login Page script
 
-if (window.location.href.includes("login")) {
+if (window.location.href.includes("login") && window.location.href.includes("checkout_url")) {
 
-    console.log('Im on the login page!... and running from github');
+    console.log('Im on the login page which has a checkout url!... and running from github');
     var newTest = (decodeURIComponent(window.location.href));
     console.log('This is newTest ' + newTest);
 
