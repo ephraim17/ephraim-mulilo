@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-BlackItalic.eot');
+    src: local('Mokoko Black Italic'), local('Mokoko-BlackItalic'),
+        url('Mokoko-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-BlackItalic.woff2') format('woff2'),
+        url('Mokoko-BlackItalic.woff') format('woff'),
+        url('Mokoko-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-Black.eot');
+    src: local('Mokoko Black'), local('Mokoko-Black'),
+        url('Mokoko-Black.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-Black.woff2') format('woff2'),
+        url('Mokoko-Black.woff') format('woff'),
+        url('Mokoko-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-LightItalic.eot');
+    src: local('Mokoko Light Italic'), local('Mokoko-LightItalic'),
+        url('Mokoko-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-LightItalic.woff2') format('woff2'),
+        url('Mokoko-LightItalic.woff') format('woff'),
+        url('Mokoko-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-Italic.eot');
+    src: local('Mokoko Italic'), local('Mokoko-Italic'),
+        url('Mokoko-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-Italic.woff2') format('woff2'),
+        url('Mokoko-Italic.woff') format('woff'),
+        url('Mokoko-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-ThinItalic.eot');
+    src: local('Mokoko Thin Italic'), local('Mokoko-ThinItalic'),
+        url('Mokoko-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-ThinItalic.woff2') format('woff2'),
+        url('Mokoko-ThinItalic.woff') format('woff'),
+        url('Mokoko-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-Bold.eot');
+    src: local('Mokoko Bold'), local('Mokoko-Bold'),
+        url('Mokoko-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-Bold.woff2') format('woff2'),
+        url('Mokoko-Bold.woff') format('woff'),
+        url('Mokoko-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-MediumItalic.eot');
+    src: local('Mokoko Medium Italic'), local('Mokoko-MediumItalic'),
+        url('Mokoko-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-MediumItalic.woff2') format('woff2'),
+        url('Mokoko-MediumItalic.woff') format('woff'),
+        url('Mokoko-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-Medium.eot');
+    src: local('Mokoko Medium'), local('Mokoko-Medium'),
+        url('Mokoko-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-Medium.woff2') format('woff2'),
+        url('Mokoko-Medium.woff') format('woff'),
+        url('Mokoko-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-Regular.eot');
+    src: local('Mokoko Regular'), local('Mokoko-Regular'),
+        url('Mokoko-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-Regular.woff2') format('woff2'),
+        url('Mokoko-Regular.woff') format('woff'),
+        url('Mokoko-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-Light.eot');
+    src: local('Mokoko Light'), local('Mokoko-Light'),
+        url('Mokoko-Light.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-Light.woff2') format('woff2'),
+        url('Mokoko-Light.woff') format('woff'),
+        url('Mokoko-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-Thin.eot');
+    src: local('Mokoko Thin'), local('Mokoko-Thin'),
+        url('Mokoko-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-Thin.woff2') format('woff2'),
+        url('Mokoko-Thin.woff') format('woff'),
+        url('Mokoko-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-ExtraBoldItalic.eot');
+    src: local('Mokoko ExtraBold Italic'), local('Mokoko-ExtraBoldItalic'),
+        url('Mokoko-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-ExtraBoldItalic.woff2') format('woff2'),
+        url('Mokoko-ExtraBoldItalic.woff') format('woff'),
+        url('Mokoko-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-ExtraBold.eot');
+    src: local('Mokoko ExtraBold'), local('Mokoko-ExtraBold'),
+        url('Mokoko-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-ExtraBold.woff2') format('woff2'),
+        url('Mokoko-ExtraBold.woff') format('woff'),
+        url('Mokoko-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mokoko';
+    src: url('Mokoko-BoldItalic.eot');
+    src: local('Mokoko Bold Italic'), local('Mokoko-BoldItalic'),
+        url('Mokoko-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mokoko-BoldItalic.woff2') format('woff2'),
+        url('Mokoko-BoldItalic.woff') format('woff'),
+        url('Mokoko-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
